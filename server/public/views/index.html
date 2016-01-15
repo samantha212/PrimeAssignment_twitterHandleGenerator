@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="handleApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Handle Creator</title>
+    <link rel="stylesheet" href="views/stylesheet.css">
+    <script src="vendor/angular.js"></script>
+    <script src="assets/scripts/client.js"></script>
+</head>
+<body ng-controller="myController">
+    <h1>Twitter Handle Generator</h1>
+    <p>Check out these 10 randomized handles!</p>
+    <ul>
+        <li ng-repeat="handle in handles">@{{handle.adjective}}{{handle.noun}} - <a ng-href={{handle.link}}>Check availability</a></li></li>
+    </ul>
+</body>
+</html>
